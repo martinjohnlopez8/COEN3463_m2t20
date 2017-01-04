@@ -7,9 +7,9 @@ router.get('/', function(req, res, next) {
   res.render('contact',{
   	title: 'Contact Us',
   	headerData: {
-	"heroImageURL":"/images/hero-image-1.jpg",
-	"headerTitle":"Welcome to MNM",
-	"headerSubtitle":"We Cater You"
+		"heroImageURL":"/images/hero-1.jpg",
+		"headerTitle":"Welcome to MNM",
+		"headerSubtitle":"We Cater You"
   	} 
   });
 });
