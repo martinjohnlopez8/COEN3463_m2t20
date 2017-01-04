@@ -1,36 +1,187 @@
 extends layout
 
 block content
-  //-Hero Section
-  header.hero
-    div.hero-overlay
-    div.hero-content.col-md-12.col-sm-12.col-xs-12
-      h1 Welcome to MNM Catering
-  //-Main Navigation
-  nav.main-navigation
-    div.container
-      div.row
-        //-Desktop Menu
-        div.desktop-nav.col-md-6.hidden-sm.hidden-xs
-          p.logo MNM
-        div.col-md-6.hidden-sm.hidden-xs
-          ul
-            li
-              a(href="#") Home
-            li
-              a(href="#") Services
-            li
-              a(href="#") Contact
-        //-Mobile Menu
-        div.mobile-nav.hidden-sm.hidden-md.hidden-lg
-          ul
-            li
-              a(href="#") Home
-            li
-              a(href="#") Services
-            li
-              a(href="#") Contact
-
-  
-
-
+    include template/hero
+    include template/navbar
+    #fh5co-portfolio.fh5co-section-gray
+      .container
+        .row
+          .col-md-8.col-md-offset-2.text-center.heading-section.animate-box
+            h3 Our Gallery
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.
+        .row.row-bottom-padded-md
+          .col-md-12
+            ul#fh5co-portfolio-list
+              li.two-third.animate-box(data-animate-effect='fadeIn', style='background-image: url(images/cover_bg_2.jpg); ')
+                a.color-3(href='#')
+                  .case-studies-summary
+                    span Creative
+                    h2 Wak in the wooden street
+              li.one-third.animate-box(data-animate-effect='fadeIn', style='background-image: url(images/cover_bg_3.jpg); ')
+                a.color-4(href='#')
+                  .case-studies-summary
+                    span Design
+                    h2 Present your product
+              li.one-third.animate-box(data-animate-effect='fadeIn', style='background-image: url(images/cover_bg_1.jpg); ')
+                a.color-5(href='#')
+                  .case-studies-summary
+                    span Photo
+                    h2 See the horizon
+              li.two-third.animate-box(data-animate-effect='fadeIn', style='background-image: url(images/blog-1.jpg); ')
+                a.color-6(href='#')
+                  .case-studies-summary
+                    span Love
+                    h2 Spend time with your partner
+        .row
+          .col-md-4.col-md-offset-4.text-center.animate-box
+            a.btn.btn-primary.btn-lg(href='#') See Gallery
+    .fh5co-content-section
+      .container
+        .row.row-bottom-padded-md
+          .col-md-8.col-md-offset-2.text-center.heading-section.animate-box
+            h3 Our Team
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.
+      .container
+        .row
+          .col-md-6
+            .fh5co-team.text-center.animate-box
+              figure
+                img(src='images/person_1.jpg', alt='user')
+              p
+                | Jean Doe, XYZ Co. 
+                br
+                span.text-mute Designer
+              blockquote
+                p
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-md-6
+            .fh5co-team.text-center.animate-box
+              figure
+                img(src='images/person_2.jpg', alt='user')
+              p
+                | Jean Doe, XYZ Co. 
+                br 
+                span.text-mute Developer
+              blockquote
+                p
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+    // fh5co-content-section
+    #fh5co-services-section.fh5co-section-gray
+      .container
+        .row
+          .col-md-8.col-md-offset-2.text-center.heading-section.animate-box
+            h3 Our Experties
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.
+      .container
+        .row.text-center
+          .col-md-4.col-sm-4
+            .service.animate-box
+              span
+                i.icon-beaker
+              h3 Web Design
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-md-4.col-sm-4
+            .service.animate-box
+              span
+                i.icon-heart
+              h3 Design Passion
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-md-4.col-sm-4
+            .service.animate-box
+              span
+                i.icon-upload
+              h3 Upload Files
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-md-4.col-sm-4
+            .service.animate-box
+              span
+                i.icon-globe
+              h3 Web Design
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .col-md-4.col-sm-4
+            .service.animate-box
+              span
+                i.icon-bike
+              h3 UI/UX Design
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
+          .col-md-4.col-sm-4
+            .service.animate-box
+              span
+                i.icon-cloud
+              h3 Lightning Cloud Server
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+    // END What we do
+    #fh5co-blog-section
+      .container
+        .row
+          .col-md-8.col-md-offset-2.text-center.heading-section.animate-box
+            h3 Recent From Blog
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.
+      .container
+        .row.row-bottom-padded-md
+          .col-lg-4.col-md-4.col-sm-6
+            .fh5co-blog.animate-box
+              a(href='#')
+                img.img-responsive(src='images/cover_bg_1.jpg', alt='')
+              .blog-text
+                .prod-title
+                  h3
+                    a(href='', #='') Web Design for the Future
+                  span.posted_by Sep. 15th
+                  span.comment
+                    a(href='')
+                      | 21
+                      i.icon-bubble2
+                  p
+                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  p
+                    a(href='#') Learn More...
+          .col-lg-4.col-md-4.col-sm-6
+            .fh5co-blog.animate-box
+              a(href='#')
+                img.img-responsive(src='images/cover_bg_2.jpg', alt='')
+              .blog-text
+                .prod-title
+                  h3
+                    a(href='', #='') Web Design for the Future
+                  span.posted_by Sep. 15th
+                  span.comment
+                    a(href='')
+                      | 21
+                      i.icon-bubble2
+                  p
+                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  p
+                    a(href='#') Learn More...
+          .clearfix.visible-sm-block
+          .col-lg-4.col-md-4.col-sm-6
+            .fh5co-blog.animate-box
+              a(href='#')
+                img.img-responsive(src='images/cover_bg_3.jpg', alt='')
+              .blog-text
+                .prod-title
+                  h3
+                    a(href='', #='') Web Design for the Future 
+                  span.posted_by Sep. 15th
+                  span.comment
+                    a(href='')
+                      | 21
+                      i.icon-bubble2
+                  p
+                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                  p
+                    a(href='#') Learn More...
+          .clearfix.visible-md-block
+        .row
+          .col-md-4.col-md-offset-4.text-center.animate-box
+            a.btn.btn-primary.btn-lg(href='#') Our Blog
