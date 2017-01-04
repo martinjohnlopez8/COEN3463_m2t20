@@ -4,7 +4,14 @@ var nodemailer = require('nodemailer');
 
 
 router.get('/', function(req, res, next) {
-  res.render('contact',{title: 'Contact Us'});
+  res.render('contact',{
+  	title: 'Contact Us',
+  	headerData: {
+	"heroImageURL":"/images/hero-image-1.jpg",
+	"headerTitle":"Welcome to MNM",
+	"headerSubtitle":"We Cater You"
+  	} 
+  });
 });
 
 router.post('/', function(req, res, next) {
