@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('contact');
 });
 
-router.post('/send', function(req, res, next) {
+router.post('/', function(req, res, next) {
 	var transporter = nodemailer.createTransport({
 		service : 'Gmail',
 		auth : {
