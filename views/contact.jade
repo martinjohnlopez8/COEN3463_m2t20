@@ -28,17 +28,14 @@ block content
             .row
               .col-md-6
                 .form-group
-                  input.form-control(type='text', placeholder='Name')
+                  input.form-control(name="name", value="", type='text', placeholder='Name', required="")
               .col-md-6
                 .form-group
-                  input.form-control(type='text', placeholder='Email')
+                  input.form-control(name="email" value="", type='text', placeholder='Email' require="")
               .col-md-12
                 .form-group
-                  textarea.form-control(name='', id='', cols='30', rows='7', placeholder='Message')
+                  textarea.form-control(name='message', id='', cols='30', rows='7', placeholder='Message')
               .col-md-12
                 .form-group
-                  input.btn.btn-primary(type='submit', value='Send Message')
-  // END fh5co-contact
+                  input.btn.btn-primary(name="submit" type='submit', value='Send Message')
   #map.fh5co-map
-  // END map
-// END fh5co-page
