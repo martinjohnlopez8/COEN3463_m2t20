@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-var transporter = nodemailer.createTransport('mnmtestmail@gmail.com');
 
 
 router.get('/', function(req, res, next) {
@@ -18,7 +17,7 @@ router.post('/send', function(req, res, next) {
 	});
 
 	var mailOptions = {
-		from : 'MNM Catering <martinjohnlopez8@gmail.com>',
+		from : 'MNM Catering <mnmtestmail@gmail.com>',
 		to : 'mnmtestmail@gmail.com',
 		subject : 'Website Message Submission',
 		text : 'Received new inquiry with the following details. Name: ' +req.body.name+ ' Email: ' +req.body.email+ ' Event: ' +req.body.event+ ' Message: ' +req.body.message,
