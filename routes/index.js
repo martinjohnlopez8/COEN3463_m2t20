@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { 
   	title: 'MNM',
   	headerData: {
-  		"heroImageURL":"/images/index/hero-image-1.jpg",
+  		"heroImageURL":"/images/hero-image-1.jpg",
   		"headerTitle":"Welcome to MNM",
   		"headerSubtitle":"We Cater You"
   	} 
