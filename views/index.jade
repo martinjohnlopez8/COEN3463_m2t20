@@ -1,5 +1,36 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}
+  //-Hero Section
+  header.hero
+    div.hero-overlay
+    div.hero-content.col-md-12.col-sm-12.col-xs-12
+      h1 Welcome to MNM Catering
+  //-Main Navigation
+  nav.main-navigation
+    div.container
+      div.row
+        //-Desktop Menu
+        div.desktop-nav.col-md-6.hidden-sm.hidden-xs
+          p.logo MNM
+        div.col-md-6.hidden-sm.hidden-xs
+          ul
+            li
+              a(href="#") Home
+            li
+              a(href="#") Services
+            li
+              a(href="#") Contact
+        //-Mobile Menu
+        div.mobile-nav.hidden-sm.hidden-md.hidden-lg
+          ul
+            li
+              a(href="#") Home
+            li
+              a(href="#") Services
+            li
+              a(href="#") Contact
+
+  
+
+

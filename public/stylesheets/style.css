@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Helvetica-Neue-Bold';
+  src: url("../fonts/HelveticaNeuBold.ttf")
+}
+
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url("../fonts/HelveticaNeue.ttf")
+}
+
+
+
+/* Editable */
+body {
+    font-family: 'Helvetica-Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #ffffff;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation{
+	padding: 15px 0;
+	width: 100%;
+	background-color: #da2;
+	z-index: 9999;
+	color: #fff;
+}
+
+.main-navigation .logo{
+	font-size: 30px;
+}
+
+.main-navigation ul{
+	float: right !important;
+	list-style: none;
+}
+
+.main-navigation li{
+	display: inline;
+	text-align: center;
+	padding: 15px 5px;
+	font-size: 20px;
+}
+
+
+.hero{ 
+  background: url("../images/hero-slide-1.jpg") no-repeat center center;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: rgba(17, 17, 17, 0.6);
+  overflow: hidden;
+}
+
+.hero .hero-content h1 {
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Helvetica-Neue-Bold';
+  line-height: 1;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 100;
+  padding: 345px 0;
+}
+
+/* Footer Stay Down
+   ========================================================================== */
+
+ .fsd-wrap {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    height: 100%;
+ }
+
+ .fsd-warp .content-wrap {
+    display: table-row;
+    height: 100%; 
+ }
+
+.fsd-wrap .footer-wrap {
+   	display: table-row;
+    height: 1px; 
+}
