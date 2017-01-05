@@ -7,9 +7,9 @@ router.get('/', function(req, res, next) {
   res.render('contact',{
   	title: 'Contact Us',
   	headerData: {
-		"heroImageURL":"/images/hero-1.jpg",
-		"headerTitle":"Welcome to MNM",
-		"headerSubtitle":"We Cater You"
+		"heroImageURL":"/images/aboutus4.jpg",
+		"headerTitle":"Welcome to Empire",
+		"headerSubtitle":"You deserve the best"
   	} 
   });
 });
@@ -27,8 +27,8 @@ router.post('/', function(req, res, next) {
 		from : req.body.name +' <'+req.body.email+'>',
 		to : 'mnmtestmail@gmail.com',
 		subject : 'Inquiry',
-		text : 'Received new inquiry with the following details. Name: ' +req.body.name+ ' Email: ' +req.body.email+ ' Message: ' +req.body.message,
-		html : '<p>Received new inquiry with the following details. </p><ul><li>Name: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>Message: '+req.body.message+'</li></ul>'
+		text : 'Received new enquiry with the following details. Name: ' +req.body.name+ ' Email: ' +req.body.email+ ' Message: ' +req.body.message,
+		html : '<p>Received new enquiry with the following details. </p><ul><li>Name: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>Message: '+req.body.message+'</li></ul>'
 	};
 
 	transporter.sendMail(mailOptions, function(error, info) {

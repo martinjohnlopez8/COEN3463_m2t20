@@ -6,9 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('about',{
   	title: 'About MNM',
   	headerData: {
-		"heroImageURL":"/images/hero-1.jpg",
-		"headerTitle":"Welcome to MNM",
-		"headerSubtitle":"We Cater You"
+		"heroImageURL":"/images/aboutus2.jpg",
+		"headerTitle":"Welcome to Empire",
+		"headerSubtitle":"You deserve the best"
   	} 
   });
 });
