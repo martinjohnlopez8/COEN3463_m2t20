@@ -1,40 +1,42 @@
 extends layout
 
 block content
-  include template/hero
-  include template/navbar
-  #fh5co-contact.fh5co-section-gray
-    .container
-        .row.animate-box
-          .col-md-6
-            h3.section-title Our Address
-            p
-              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-            ul.contact-info
-              li
-                i.icon-location-pin
-                | 198 West 21th Street, Suite 721 New York NY 10016
-              li
-                i.icon-phone2
-                | + 1235 2355 98
-              li
-                i.icon-mail
-                a(href='#') info@yoursite.com
-              li
-                i.icon-globe2
-                a(href='#') www.yoursite.com
-          .col-md-6
-            .row
-              form(action='/contact', method='post')
-                .col-md-6
-                  .form-group
-                    input.form-control(name='name', value='', type='text', placeholder='Name', required)
-                .col-md-6
-                  .form-group
-                    input.form-control(name='email' value='', type='text', placeholder='Email', required)
-                .col-md-12
-                  .form-group
-                    textarea.form-control(name='message', id='', cols='30', rows='7', placeholder='Message')
-                .col-md-12
-                  .form-group
-                    input.btn.btn-primary(name='submit' type='submit', value='Send Message')
+  #fh5co-wrapper
+  #fh5co-page
+    include template/hero
+    include template/navbar
+    #fh5co-contact.fh5co-section-gray
+      .container
+          .row.animate-box
+            .col-md-6
+              h3.section-title Our Address
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+              ul.contact-info
+                li
+                  i.icon-location-pin
+                  | 198 West 21th Street, Suite 721 New York NY 10016
+                li
+                  i.icon-phone2
+                  | + 1235 2355 98
+                li
+                  i.icon-mail
+                  a(href='#') info@yoursite.com
+                li
+                  i.icon-globe2
+                  a(href='#') www.yoursite.com
+            .col-md-6
+              .row
+                form(action='/contact', method='post')
+                  .col-md-6
+                    .form-group
+                      input.form-control(name='name', value='', type='text', placeholder='Name', required)
+                  .col-md-6
+                    .form-group
+                      input.form-control(name='email' value='', type='text', placeholder='Email', required)
+                  .col-md-12
+                    .form-group
+                      textarea.form-control(name='message', id='', cols='30', rows='7', placeholder='Message')
+                  .col-md-12
+                    .form-group
+                      input.btn.btn-primary(name='submit' type='submit', value='Send Message')
