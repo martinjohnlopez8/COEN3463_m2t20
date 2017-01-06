@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "name":"Served Plated to Each Guest",
     "id":"1",
@@ -7,7 +7,7 @@
     "priceRange":"₱699.00 per person"
   },
   {
-    "name":"Table díHote",
+    "name":"Table d' Hote",
     "id":"2",
     "image":"/images/service4.jpg",
     "description":"It is a catering service that serves warmth and generosity. The chef will display the prepared food on the table, and the guests will fall in line to get the food that they want to eat.",
@@ -16,16 +16,16 @@
   {
     "name":"Russian Service",
     "id":"3",
-    "image":"/images/service3.jpg",
+    "image":"/images/service2.jpg",
     "description":"This type gives a comfortable aura to the venue as the catering staff will give and present the food on the tray. The guests will be the one to get the food and drinks on the tray.",
     "priceRange":"₱38,000 good for 50 persons"
   },
   {
-    "name":"French Service",
+    "name":"Cocktail Party",
     "id":"4",
-    "image":"/images/service2.jpg",
-    "description":"This service is perfect for formal presentations and fine dining events.Each waiter has his own responsibility. Since they have their own responsibilities, your guests don't need to approach the long table to get the food as it will come to you.",
-    "priceRange":"₱38,000 good for 50 persons"
+    "image":"/images/service3.jpg",
+    "description":"As the name implies, this catering service offers drinks to their guests. They are usually given at the front door so that the visitors can start drinking the moment they join the event.",
+    "priceRange":"P18,000.00 good for 50 people"
   },
   {
     "name":"Traditional Buffet",

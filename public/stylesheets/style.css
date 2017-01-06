@@ -368,7 +368,7 @@ figure {
 #main-logo {
   font-size: 30px;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: block;
   text-transform: uppercase;
   margin-top: -5em;
@@ -394,7 +394,8 @@ figure {
   z-index: 2;
   font-size: 22px;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   font-weight: 700;
   float: left;
 }
@@ -1520,5 +1521,6 @@ figure {
 .about {
 	margin:auto;	
 }
+
 
 /*# sourceMappingURL=style.css.map */
