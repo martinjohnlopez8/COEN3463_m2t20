@@ -41,7 +41,7 @@ router.get('/:serviceID', function(req, res){
             });
     }
     else {
-        res.render('404',{
+        res.render('page-error',{
             title: '404 | Page not found'
         });
     }

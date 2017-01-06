@@ -274,7 +274,7 @@ figure {
   border-bottom: none !important;
 }
 .sf-menu a:hover, .sf-menu a:focus {
-  color: #ff9205 !important;
+  color: #B7BD7C !important;
 }
 
 .sf-menu li.active a:hover, .sf-menu li.active a:focus {
@@ -356,7 +356,7 @@ figure {
   left: 0;
   width: 100%;
   z-index: 1022;
-  background: #fff;
+  background: #EAE8DB;
 }
 
 .nav-header {
@@ -477,7 +477,7 @@ figure {
 
 #fh5co-primary-menu .fh5co-sub-menu {
   padding: 10px 7px 10px;
-  background: #fff;
+  background: #EAE8DB;
   left: 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -548,7 +548,7 @@ figure {
   background: none;
 }
 #fh5co-primary-menu .fh5co-sub-menu a:hover {
-  color: #37a000 !important;
+  color: #B7BD7C !important;
 }
 
 #fh5co-work-section,
@@ -586,7 +586,7 @@ figure {
   width: 100px;
   margin-left: -50px;
   height: 2px;
-  background: #37a000;
+  background: #948F99;
 }
 .heading-section h3 {
   font-size: 40px;

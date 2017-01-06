@@ -17,7 +17,6 @@ var contact = require('./routes/contact');
 var app = express();
 
 mongoose.Promise = global.Promise;
-//var db = mongoose.connect('localhost:27017/m2t20');
 var db = mongoose.connect(uri);
 
 //load all files in models dir
