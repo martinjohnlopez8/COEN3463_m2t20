@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 					{
 						"heroImageURL":"/images/aboutus3.jpg",
 						"headerTitle":"Welcome to Empire",
-						"headerSubtitle":"You deserve the best"
+						"headerSubtitle":"“One cannot think well, love well, sleep well, if one has not dined well.”"
 					},
 				servicesData: servicesData
 			});

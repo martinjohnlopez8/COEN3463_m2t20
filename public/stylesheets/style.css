@@ -1168,7 +1168,7 @@ figure {
 }
 
 #footer {
-  background: #ff9205;
+  background: #702A2B;
   padding: 60px 0 40px;
 }
 #footer p {
@@ -1220,7 +1220,7 @@ figure {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #ff9205;
+  background: #702A2B;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;

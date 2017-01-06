@@ -26,6 +26,7 @@ router.get('/:serviceID', function(req, res){
                 var serviceData = servicesData[serviceID - 1];
                 var name =  serviceData.name;
                 var image = serviceData.image;
+                var quote = serviceData.quote;
                 var description = serviceData.description;
                 var priceRange = serviceData.priceRange;
 
@@ -33,6 +34,7 @@ router.get('/:serviceID', function(req, res){
                     title: name,
                     name: name,
                     image: image,
+                    quote: quote,
                     description: description,
                     priceRange: priceRange
                 });
