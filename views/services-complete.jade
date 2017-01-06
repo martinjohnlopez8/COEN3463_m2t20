@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  #fh5co-wrapper
+  #fh5co-page
+  include template/navbar
+  #fh5co-feature-product.fh5co-section-gray
+      .container
+        .row
+          .col-md-8.col-md-offset-2.text-center.heading-section
+            h3= name
+            p= description
+            p= priceRange
+        .row.row-bottom-padded-md
+          .col-md-12.text-center.animate-box
+            p
+              img.img-responsive.img-rounded.about(src="#{image}", alt="")

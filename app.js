@@ -4,6 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var Schema = mongoose.schema;
+var fs = require('fs');
+var uri = 'mongodb://martin:123123@ds050739.mlab.com:50739/m2t20'
 
 var index = require('./routes/index');
 var services = require('./routes/services');
@@ -11,6 +15,23 @@ var about = require('./routes/about');
 var contact = require('./routes/contact');
 
 var app = express();
+
+mongoose.Promise = global.Promise;
+//var db = mongoose.connect('localhost:27017/m2t20');
+var db = mongoose.connect(uri);
+
+//load all files in models dir
+fs.readdirSync(__dirname + '/models').forEach(function(filename) {
+  if (~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
+});
+
+
+app.get('/users', function(req, res) {
+  mongoose.model('m2t20').find(function(err, m2t20) {
+    res.send(m2t20);
+  });
+});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +49,17 @@ app.use('/', index);
 app.use('/services', services);
 app.use('/about', about);
 app.use('/contact', contact);
+
+//app.use(function(req,res,next){
+  //req.database = database;
+  //next();
+//});
+
+
+//load all files in models dir
+//fs.readdirSync(__dirname + '/models').forEach(function(filename) {
+  //if (~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
+//});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

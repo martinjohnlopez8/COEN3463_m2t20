@@ -1,0 +1,44 @@
+[
+  {
+    "name":"Served Plated to Each Guest",
+    "id":"1",
+    "image":"/images/service1.jpg",
+    "description":"It is a common service offered by the hotel. Each plate is arranged accordingly by the chef and is given out to customers.",
+    "priceRange":"₱699.00 per person"
+  },
+  {
+    "name":"Table díHote",
+    "id":"2",
+    "image":"/images/service4.jpg",
+    "description":"It is a catering service that serves warmth and generosity. The chef will display the prepared food on the table, and the guests will fall in line to get the food that they want to eat.",
+    "priceRange":"₱32,000 good for 50 persons"
+  },
+  {
+    "name":"Russian Service",
+    "id":"3",
+    "image":"/images/service3.jpg",
+    "description":"This type gives a comfortable aura to the venue as the catering staff will give and present the food on the tray. The guests will be the one to get the food and drinks on the tray.",
+    "priceRange":"₱38,000 good for 50 persons"
+  },
+  {
+    "name":"French Service",
+    "id":"4",
+    "image":"/images/service2.jpg",
+    "description":"This service is perfect for formal presentations and fine dining events.Each waiter has his own responsibility. Since they have their own responsibilities, your guests don't need to approach the long table to get the food as it will come to you.",
+    "priceRange":"₱38,000 good for 50 persons"
+  },
+  {
+    "name":"Traditional Buffet",
+    "id":"5",
+    "image":"/images/service5.jpg",
+    "description":"It is a bigger version of table díhote catering service as it provides several tables for each course. There are tables for appetizers, for main courses, and for desserts. You just have to approach the table that offers the food you want to eat.",
+    "priceRange":"₱18,000 good for 50 persons"
+  },
+  {
+    "name":"Open House",
+    "id":"6",
+    "image":"/images/service6.jpg",
+    "description":"It is a popular choice of many organizers as it offers food and drinks throughout the party.",
+    "priceRange":"₱39,000.00 good for 50 persons"
+  }
+]
