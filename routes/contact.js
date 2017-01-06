@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
   	title: 'Contact Us',
   	headerData: {
 		"heroImageURL":"/images/aboutus4.jpg",
-		"headerTitle":"Welcome to Empire",
-		"headerSubtitle":"You deserve the best"
+		"headerTitle":"Give us a call",
+		"headerSubtitle":"“Food is symbolic of love when words are inadequate.”"
   	} 
   });
 });

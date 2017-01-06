@@ -3,6 +3,19 @@ extends layout
 block content
   #fh5co-wrapper
   #fh5co-page
+  .fh5co-hero
+    .fh5co-overlay
+    .fh5co-cover.text-center(data-stellar-background-ratio='0.5', style='background-image: url(#{image});')
+      .desc
+        .container
+          .col-md-10.col-md-offset-1
+            a#main-logo(href='/')
+              img.img-responsive(src='', alt='')
+            .animate-box
+              h2= name
+              p “People who love to eat are always the best people.”
+              p
+                a.btn.btn-primary.btn-lg(href='/contact') Call us
   include template/navbar
   #fh5co-feature-product.fh5co-section-gray
       .container
@@ -13,5 +26,3 @@ block content
             p= priceRange
         .row.row-bottom-padded-md
           .col-md-12.text-center.animate-box
-            p
-              img.img-responsive.img-rounded.about(src="#{image}", alt="")

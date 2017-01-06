@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
   	title: 'About MNM',
   	headerData: {
 		"heroImageURL":"/images/aboutus2.jpg",
-		"headerTitle":"Welcome to Empire",
-		"headerSubtitle":"You deserve the best"
+		"headerTitle":"History of Empire",
+		"headerSubtitle":"“The secret of success in life is to eat what you like and let the food fight it out inside.”"
   	} 
   });
 });

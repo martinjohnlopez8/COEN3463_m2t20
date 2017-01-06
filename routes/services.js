@@ -9,8 +9,8 @@ router.get('/', function(req, res, next) {
 				headerData:
 					{
 						"heroImageURL":"/images/aboutus1.jpg",
-						"headerTitle":"Welcome to Empire",
-						"headerSubtitle":"You deserve the best"
+						"headerTitle":"Culinary Specialties",
+						"headerSubtitle":"“There is no sincerer love than the love of food.”"
 					},
 				servicesData: servicesData
 			});
